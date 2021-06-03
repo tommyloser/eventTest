@@ -29,7 +29,7 @@ public class MyView extends View {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        printLog(event);
+//        printLog(event);
         boolean rs =  super.onTouchEvent(event);
         Log.d(tag, "onTouchEvent:" + rs);
         return rs;
@@ -38,7 +38,7 @@ public class MyView extends View {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent event) {
-        printLog(event);
+//        printLog(event);
         Log.d(tag, "before dispatchTouchEvent:");
         boolean rs = super.dispatchTouchEvent(event);
         Log.d(tag, "after dispatchTouchEvent:" + rs);

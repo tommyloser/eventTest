@@ -30,7 +30,7 @@ public class MyFrameLayout extends FrameLayout {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        printLog(event);
+//        printLog(event);
         boolean rs =  super.onTouchEvent(event);
         Log.d(tag, "onTouchEvent:" + rs);
         return rs;
@@ -38,7 +38,7 @@ public class MyFrameLayout extends FrameLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        printLog(ev);
+//        printLog(ev);
         boolean rs = super.onInterceptTouchEvent(ev);
         Log.d(tag, "onInterceptTouchEvent:" + rs);
         return rs;
